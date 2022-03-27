@@ -3,18 +3,76 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		260368B9279558AE0006A8A9 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260368B8279558AE0006A8A9 /* SettingsViewController.swift */; };
+		260368BB27955E270006A8A9 /* SettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260368BA27955E270006A8A9 /* SettingsModel.swift */; };
+		260368BD2796D3370006A8A9 /* APIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260368BC2796D3370006A8A9 /* APIImage.swift */; };
+		260368BF2796D4590006A8A9 /* NewReleasesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260368BE2796D4590006A8A9 /* NewReleasesResponse.swift */; };
+		260368C12796D6F60006A8A9 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260368C02796D6F60006A8A9 /* Artist.swift */; };
+		260368C32796E3590006A8A9 /* FeaturedPlaylistResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260368C22796E3590006A8A9 /* FeaturedPlaylistResponse.swift */; };
+		260368C52796F3980006A8A9 /* RecommendedGenresResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260368C42796F3980006A8A9 /* RecommendedGenresResponse.swift */; };
+		260368C727972D190006A8A9 /* RecommendationsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260368C627972D190006A8A9 /* RecommendationsResponse.swift */; };
+		260368C927972FE40006A8A9 /* AudioTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260368C827972FE40006A8A9 /* AudioTrack.swift */; };
+		260368CB279730070006A8A9 /* Playlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260368CA279730070006A8A9 /* Playlist.swift */; };
+		260A200027D3F12D0085370A /* SearchResultDefaultTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260A1FFF27D3F12D0085370A /* SearchResultDefaultTableViewCell.swift */; };
+		260A200227D3F6320085370A /* SearchResultDefaultTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260A200127D3F6320085370A /* SearchResultDefaultTableViewCellViewModel.swift */; };
+		260A200427D4B39C0085370A /* SearchResultSubtitleTableVIewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260A200327D4B39C0085370A /* SearchResultSubtitleTableVIewCell.swift */; };
+		260A200627D4B5220085370A /* SearchResultSubtitleTableViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260A200527D4B5220085370A /* SearchResultSubtitleTableViewCellViewModel.swift */; };
+		260C55A627B950960050608D /* SearchResultResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260C55A527B950960050608D /* SearchResultResponse.swift */; };
+		260C55A827B9562F0050608D /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260C55A727B9562F0050608D /* SearchResult.swift */; };
+		260FD8F627E5C66C00B3F3D8 /* PlaybackPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260FD8F527E5C66C00B3F3D8 /* PlaybackPresenter.swift */; };
+		260FD8F827E5CEF800B3F3D8 /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260FD8F727E5CEF800B3F3D8 /* PlayerViewController.swift */; };
+		260FD8FA27E5F35400B3F3D8 /* PlayerControlsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 260FD8F927E5F35400B3F3D8 /* PlayerControlsView.swift */; };
+		26358556279A80960061EAF0 /* NewReleasesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26358555279A80960061EAF0 /* NewReleasesCollectionViewCell.swift */; };
+		26358558279A80E10061EAF0 /* FeaturedPlaylistCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26358557279A80E10061EAF0 /* FeaturedPlaylistCollectionViewCell.swift */; };
+		2635855A279A81240061EAF0 /* RecommendedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26358559279A81240061EAF0 /* RecommendedCollectionViewCell.swift */; };
+		2635855D279A859A0061EAF0 /* NewReleasesCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2635855C279A859A0061EAF0 /* NewReleasesCellViewModel.swift */; };
+		2635855F279C25410061EAF0 /* FeaturePlaylistCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2635855E279C25400061EAF0 /* FeaturePlaylistCellViewModel.swift */; };
+		26358561279C2A7F0061EAF0 /* RecommendedTrackViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26358560279C2A7F0061EAF0 /* RecommendedTrackViewModel.swift */; };
+		26358563279C6EE60061EAF0 /* AlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26358562279C6EE60061EAF0 /* AlbumViewController.swift */; };
+		26358565279C73C20061EAF0 /* PlaylistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26358564279C73C20061EAF0 /* PlaylistViewController.swift */; };
+		26358567279C827E0061EAF0 /* AlbumDetailsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26358566279C827E0061EAF0 /* AlbumDetailsResponse.swift */; };
+		26358569279C8B600061EAF0 /* PlaylistDetailsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26358568279C8B600061EAF0 /* PlaylistDetailsResponse.swift */; };
+		2635856C279C9E9F0061EAF0 /* PlaylistHeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2635856B279C9E9F0061EAF0 /* PlaylistHeaderCollectionReusableView.swift */; };
+		2635856E279D26DE0061EAF0 /* PlaylistHeaderViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2635856D279D26DE0061EAF0 /* PlaylistHeaderViewViewModel.swift */; };
+		26358570279D5B6F0061EAF0 /* TitleHeaderCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2635856F279D5B6F0061EAF0 /* TitleHeaderCollectionReusableView.swift */; };
+		26358572279D6CEB0061EAF0 /* AlbumTrackCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26358571279D6CEB0061EAF0 /* AlbumTrackCollectionViewCell.swift */; };
+		26358574279D701B0061EAF0 /* AlbumCollectionViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26358573279D701B0061EAF0 /* AlbumCollectionViewCellViewModel.swift */; };
+		264F6CE527EEF71100938180 /* LibraryPlaylistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264F6CE427EEF71100938180 /* LibraryPlaylistViewController.swift */; };
+		264F6CE827EEF7A700938180 /* LibraryAlbumsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264F6CE727EEF7A700938180 /* LibraryAlbumsViewController.swift */; };
+		264F6CEA27EF098500938180 /* LibraryToggleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264F6CE927EF098500938180 /* LibraryToggleView.swift */; };
+		264F6CEC27EF3D1B00938180 /* LibraryPlaylistResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264F6CEB27EF3D1B00938180 /* LibraryPlaylistResponse.swift */; };
+		264F6CEE27EF523900938180 /* ActionLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 264F6CED27EF523900938180 /* ActionLabelView.swift */; };
+		26A61391278C1E4800442A8F /* APICaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A61390278C1E4800442A8F /* APICaller.swift */; };
+		26A61393278C1EB600442A8F /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A61392278C1EB600442A8F /* UserProfile.swift */; };
+		26A61395278C467C00442A8F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26A61394278C467C00442A8F /* ProfileViewController.swift */; };
 		26B77C5E278AAF9600521C15 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B77C5D278AAF9600521C15 /* AppDelegate.swift */; };
 		26B77C60278AAF9600521C15 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B77C5F278AAF9600521C15 /* SceneDelegate.swift */; };
 		26B77C62278AAF9600521C15 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B77C61278AAF9600521C15 /* ViewController.swift */; };
-		26B77C65278AAF9600521C15 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26B77C63278AAF9600521C15 /* Main.storyboard */; };
 		26B77C67278AAF9800521C15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26B77C66278AAF9800521C15 /* Assets.xcassets */; };
 		26B77C6A278AAF9800521C15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26B77C68278AAF9800521C15 /* LaunchScreen.storyboard */; };
 		26B77C75278AAF9800521C15 /* MeloManiacTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B77C74278AAF9800521C15 /* MeloManiacTests.swift */; };
 		26B77C80278AAF9900521C15 /* MeloManiacUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B77C7F278AAF9900521C15 /* MeloManiacUITests.swift */; };
+		26B77C8F278AB76200521C15 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B77C8E278AB76200521C15 /* HomeViewController.swift */; };
+		26B77C91278AB7A900521C15 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B77C90278AB7A900521C15 /* TabBarController.swift */; };
+		26B77C93278ABE5900521C15 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B77C92278ABE5900521C15 /* SearchViewController.swift */; };
+		26B77C95278ABE7600521C15 /* LibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B77C94278ABE7600521C15 /* LibraryViewController.swift */; };
+		26B77C9A278ACB0800521C15 /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B77C99278ACB0800521C15 /* AuthManager.swift */; };
+		26B77C9C278AE55500521C15 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B77C9B278AE55500521C15 /* AuthViewController.swift */; };
+		26B77C9F278AE96800521C15 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B77C9E278AE96800521C15 /* Extensions.swift */; };
+		26B77CA1278AEA9700521C15 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B77CA0278AEA9700521C15 /* WelcomeViewController.swift */; };
+		26B77CA4278B4C4100521C15 /* AuthResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26B77CA3278B4C4100521C15 /* AuthResponse.swift */; };
+		26D13E9B27A5BDD60009DDE8 /* AllCategoriesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D13E9A27A5BDD60009DDE8 /* AllCategoriesResponse.swift */; };
+		26D13E9D27A6C9E30009DDE8 /* CategoryCollectionViewCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D13E9C27A6C9E30009DDE8 /* CategoryCollectionViewCellViewModel.swift */; };
+		26D13E9F27A6CE930009DDE8 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D13E9E27A6CE930009DDE8 /* CategoryViewController.swift */; };
+		26E0FAF0279EC22F0025436A /* SearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E0FAEF279EC22F0025436A /* SearchResultsViewController.swift */; };
+		26E2418027A2CBED007F3364 /* GenreCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E2417F27A2CBED007F3364 /* GenreCollectionViewCell.swift */; };
+		28239F4E2501D1E7E26B200E /* Pods_MeloManiacTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCAF335242998E970FF2231A /* Pods_MeloManiacTests.framework */; };
+		A72E8EAFE838330EF7CAEF10 /* Pods_MeloManiac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E604F64B969AA22A07CBF07 /* Pods_MeloManiac.framework */; };
+		E6E7274593FD130A12453FE6 /* Pods_MeloManiac_MeloManiacUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 498253BCFA38768855DA7286 /* Pods_MeloManiac_MeloManiacUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,11 +93,54 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D3B74107A244E901DDCB5C9 /* Pods-MeloManiac-MeloManiacUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeloManiac-MeloManiacUITests.release.xcconfig"; path = "Target Support Files/Pods-MeloManiac-MeloManiacUITests/Pods-MeloManiac-MeloManiacUITests.release.xcconfig"; sourceTree = "<group>"; };
+		10BA90E17073419897E24DFE /* Pods-MeloManiacTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeloManiacTests.debug.xcconfig"; path = "Target Support Files/Pods-MeloManiacTests/Pods-MeloManiacTests.debug.xcconfig"; sourceTree = "<group>"; };
+		260368B8279558AE0006A8A9 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		260368BA27955E270006A8A9 /* SettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModel.swift; sourceTree = "<group>"; };
+		260368BC2796D3370006A8A9 /* APIImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIImage.swift; sourceTree = "<group>"; };
+		260368BE2796D4590006A8A9 /* NewReleasesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewReleasesResponse.swift; sourceTree = "<group>"; };
+		260368C02796D6F60006A8A9 /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
+		260368C22796E3590006A8A9 /* FeaturedPlaylistResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedPlaylistResponse.swift; sourceTree = "<group>"; };
+		260368C42796F3980006A8A9 /* RecommendedGenresResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendedGenresResponse.swift; sourceTree = "<group>"; };
+		260368C627972D190006A8A9 /* RecommendationsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendationsResponse.swift; sourceTree = "<group>"; };
+		260368C827972FE40006A8A9 /* AudioTrack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioTrack.swift; sourceTree = "<group>"; };
+		260368CA279730070006A8A9 /* Playlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Playlist.swift; sourceTree = "<group>"; };
+		260A1FFF27D3F12D0085370A /* SearchResultDefaultTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultDefaultTableViewCell.swift; sourceTree = "<group>"; };
+		260A200127D3F6320085370A /* SearchResultDefaultTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultDefaultTableViewCellViewModel.swift; sourceTree = "<group>"; };
+		260A200327D4B39C0085370A /* SearchResultSubtitleTableVIewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultSubtitleTableVIewCell.swift; sourceTree = "<group>"; };
+		260A200527D4B5220085370A /* SearchResultSubtitleTableViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultSubtitleTableViewCellViewModel.swift; sourceTree = "<group>"; };
+		260C55A527B950960050608D /* SearchResultResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultResponse.swift; sourceTree = "<group>"; };
+		260C55A727B9562F0050608D /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
+		260FD8F527E5C66C00B3F3D8 /* PlaybackPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaybackPresenter.swift; sourceTree = "<group>"; };
+		260FD8F727E5CEF800B3F3D8 /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
+		260FD8F927E5F35400B3F3D8 /* PlayerControlsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerControlsView.swift; sourceTree = "<group>"; };
+		26358555279A80960061EAF0 /* NewReleasesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewReleasesCollectionViewCell.swift; sourceTree = "<group>"; };
+		26358557279A80E10061EAF0 /* FeaturedPlaylistCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedPlaylistCollectionViewCell.swift; sourceTree = "<group>"; };
+		26358559279A81240061EAF0 /* RecommendedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendedCollectionViewCell.swift; sourceTree = "<group>"; };
+		2635855C279A859A0061EAF0 /* NewReleasesCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewReleasesCellViewModel.swift; sourceTree = "<group>"; };
+		2635855E279C25400061EAF0 /* FeaturePlaylistCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturePlaylistCellViewModel.swift; sourceTree = "<group>"; };
+		26358560279C2A7F0061EAF0 /* RecommendedTrackViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendedTrackViewModel.swift; sourceTree = "<group>"; };
+		26358562279C6EE60061EAF0 /* AlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumViewController.swift; sourceTree = "<group>"; };
+		26358564279C73C20061EAF0 /* PlaylistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistViewController.swift; sourceTree = "<group>"; };
+		26358566279C827E0061EAF0 /* AlbumDetailsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumDetailsResponse.swift; sourceTree = "<group>"; };
+		26358568279C8B600061EAF0 /* PlaylistDetailsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistDetailsResponse.swift; sourceTree = "<group>"; };
+		2635856B279C9E9F0061EAF0 /* PlaylistHeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistHeaderCollectionReusableView.swift; sourceTree = "<group>"; };
+		2635856D279D26DE0061EAF0 /* PlaylistHeaderViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistHeaderViewViewModel.swift; sourceTree = "<group>"; };
+		2635856F279D5B6F0061EAF0 /* TitleHeaderCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleHeaderCollectionReusableView.swift; sourceTree = "<group>"; };
+		26358571279D6CEB0061EAF0 /* AlbumTrackCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumTrackCollectionViewCell.swift; sourceTree = "<group>"; };
+		26358573279D701B0061EAF0 /* AlbumCollectionViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumCollectionViewCellViewModel.swift; sourceTree = "<group>"; };
+		264F6CE427EEF71100938180 /* LibraryPlaylistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryPlaylistViewController.swift; sourceTree = "<group>"; };
+		264F6CE727EEF7A700938180 /* LibraryAlbumsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryAlbumsViewController.swift; sourceTree = "<group>"; };
+		264F6CE927EF098500938180 /* LibraryToggleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryToggleView.swift; sourceTree = "<group>"; };
+		264F6CEB27EF3D1B00938180 /* LibraryPlaylistResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryPlaylistResponse.swift; sourceTree = "<group>"; };
+		264F6CED27EF523900938180 /* ActionLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActionLabelView.swift; sourceTree = "<group>"; };
+		26A61390278C1E4800442A8F /* APICaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICaller.swift; sourceTree = "<group>"; };
+		26A61392278C1EB600442A8F /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		26A61394278C467C00442A8F /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		26B77C5A278AAF9600521C15 /* MeloManiac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MeloManiac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26B77C5D278AAF9600521C15 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		26B77C5F278AAF9600521C15 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		26B77C61278AAF9600521C15 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		26B77C64278AAF9600521C15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		26B77C66278AAF9800521C15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		26B77C69278AAF9800521C15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		26B77C6B278AAF9800521C15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +150,27 @@
 		26B77C7B278AAF9900521C15 /* MeloManiacUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MeloManiacUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		26B77C7F278AAF9900521C15 /* MeloManiacUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeloManiacUITests.swift; sourceTree = "<group>"; };
 		26B77C81278AAF9900521C15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26B77C8E278AB76200521C15 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		26B77C90278AB7A900521C15 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		26B77C92278ABE5900521C15 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		26B77C94278ABE7600521C15 /* LibraryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewController.swift; sourceTree = "<group>"; };
+		26B77C99278ACB0800521C15 /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		26B77C9B278AE55500521C15 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		26B77C9E278AE96800521C15 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		26B77CA0278AEA9700521C15 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		26B77CA3278B4C4100521C15 /* AuthResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthResponse.swift; sourceTree = "<group>"; };
+		26D13E9A27A5BDD60009DDE8 /* AllCategoriesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCategoriesResponse.swift; sourceTree = "<group>"; };
+		26D13E9C27A6C9E30009DDE8 /* CategoryCollectionViewCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewCellViewModel.swift; sourceTree = "<group>"; };
+		26D13E9E27A6CE930009DDE8 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
+		26E0FAEF279EC22F0025436A /* SearchResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsViewController.swift; sourceTree = "<group>"; };
+		26E2417F27A2CBED007F3364 /* GenreCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreCollectionViewCell.swift; sourceTree = "<group>"; };
+		498253BCFA38768855DA7286 /* Pods_MeloManiac_MeloManiacUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MeloManiac_MeloManiacUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		593649D0022B734C699C7E51 /* Pods-MeloManiacTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeloManiacTests.release.xcconfig"; path = "Target Support Files/Pods-MeloManiacTests/Pods-MeloManiacTests.release.xcconfig"; sourceTree = "<group>"; };
+		72F36C34F9A4ADA211447EB9 /* Pods-MeloManiac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeloManiac.release.xcconfig"; path = "Target Support Files/Pods-MeloManiac/Pods-MeloManiac.release.xcconfig"; sourceTree = "<group>"; };
+		882D60D7A657E629D7420BFA /* Pods-MeloManiac-MeloManiacUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeloManiac-MeloManiacUITests.debug.xcconfig"; path = "Target Support Files/Pods-MeloManiac-MeloManiacUITests/Pods-MeloManiac-MeloManiacUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8E604F64B969AA22A07CBF07 /* Pods_MeloManiac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MeloManiac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C12BF0C6C0C247F57373ECF5 /* Pods-MeloManiac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeloManiac.debug.xcconfig"; path = "Target Support Files/Pods-MeloManiac/Pods-MeloManiac.debug.xcconfig"; sourceTree = "<group>"; };
+		DCAF335242998E970FF2231A /* Pods_MeloManiacTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MeloManiacTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +178,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A72E8EAFE838330EF7CAEF10 /* Pods_MeloManiac.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +186,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28239F4E2501D1E7E26B200E /* Pods_MeloManiacTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,19 +194,100 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6E7274593FD130A12453FE6 /* Pods_MeloManiac_MeloManiacUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		260A1FFE27D3F1010085370A /* SearchResultCells */ = {
+			isa = PBXGroup;
+			children = (
+				260A1FFF27D3F12D0085370A /* SearchResultDefaultTableViewCell.swift */,
+				260A200327D4B39C0085370A /* SearchResultSubtitleTableVIewCell.swift */,
+				260A200527D4B5220085370A /* SearchResultSubtitleTableViewCellViewModel.swift */,
+			);
+			path = SearchResultCells;
+			sourceTree = "<group>";
+		};
+		260FD8F427E5C64200B3F3D8 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				260FD8F527E5C66C00B3F3D8 /* PlaybackPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		26358553279A80530061EAF0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				26B77C8D278AB73200521C15 /* Controllers */,
+				2635856A279C9E740061EAF0 /* Headers */,
+				260A1FFE27D3F1010085370A /* SearchResultCells */,
+				26358554279A807B0061EAF0 /* Brows */,
+				260FD8F927E5F35400B3F3D8 /* PlayerControlsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		26358554279A807B0061EAF0 /* Brows */ = {
+			isa = PBXGroup;
+			children = (
+				26E2417E27A2CBCD007F3364 /* Cells */,
+			);
+			path = Brows;
+			sourceTree = "<group>";
+		};
+		2635855B279A85510061EAF0 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				2635855C279A859A0061EAF0 /* NewReleasesCellViewModel.swift */,
+				2635855E279C25400061EAF0 /* FeaturePlaylistCellViewModel.swift */,
+				26358560279C2A7F0061EAF0 /* RecommendedTrackViewModel.swift */,
+				2635856D279D26DE0061EAF0 /* PlaylistHeaderViewViewModel.swift */,
+				26358573279D701B0061EAF0 /* AlbumCollectionViewCellViewModel.swift */,
+				26D13E9C27A6C9E30009DDE8 /* CategoryCollectionViewCellViewModel.swift */,
+				260A200127D3F6320085370A /* SearchResultDefaultTableViewCellViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		2635856A279C9E740061EAF0 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				2635856B279C9E9F0061EAF0 /* PlaylistHeaderCollectionReusableView.swift */,
+				2635856F279D5B6F0061EAF0 /* TitleHeaderCollectionReusableView.swift */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		264F6CE627EEF75700938180 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				264F6CE427EEF71100938180 /* LibraryPlaylistViewController.swift */,
+				264F6CE727EEF7A700938180 /* LibraryAlbumsViewController.swift */,
+				264F6CE927EF098500938180 /* LibraryToggleView.swift */,
+				264F6CED27EF523900938180 /* ActionLabelView.swift */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
 		26B77C51278AAF9600521C15 = {
 			isa = PBXGroup;
 			children = (
+				260FD8F427E5C64200B3F3D8 /* Presenter */,
+				26B77C9D278AE95900521C15 /* Extensions */,
+				26B77C98278ACAF300521C15 /* Managers */,
+				26B77CA2278B4C3300521C15 /* Model */,
+				2635855B279A85510061EAF0 /* ViewModels */,
+				26358553279A80530061EAF0 /* Views */,
 				26B77C5C278AAF9600521C15 /* MeloManiac */,
 				26B77C73278AAF9800521C15 /* MeloManiacTests */,
 				26B77C7E278AAF9900521C15 /* MeloManiacUITests */,
 				26B77C5B278AAF9600521C15 /* Products */,
+				40BE33B01310C4677D81DF68 /* Pods */,
+				F4C1B037350C9AC50A0D997B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,7 +307,6 @@
 				26B77C5D278AAF9600521C15 /* AppDelegate.swift */,
 				26B77C5F278AAF9600521C15 /* SceneDelegate.swift */,
 				26B77C61278AAF9600521C15 /* ViewController.swift */,
-				26B77C63278AAF9600521C15 /* Main.storyboard */,
 				26B77C66278AAF9800521C15 /* Assets.xcassets */,
 				26B77C68278AAF9800521C15 /* LaunchScreen.storyboard */,
 				26B77C6B278AAF9800521C15 /* Info.plist */,
@@ -128,6 +332,119 @@
 			path = MeloManiacUITests;
 			sourceTree = "<group>";
 		};
+		26B77C8D278AB73200521C15 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				26B77C97278ACAE500521C15 /* Others */,
+				26B77C96278ACADB00521C15 /* Core */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		26B77C96278ACADB00521C15 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				26B77C8E278AB76200521C15 /* HomeViewController.swift */,
+				26B77C90278AB7A900521C15 /* TabBarController.swift */,
+				26B77C92278ABE5900521C15 /* SearchViewController.swift */,
+				26B77C94278ABE7600521C15 /* LibraryViewController.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		26B77C97278ACAE500521C15 /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				264F6CE627EEF75700938180 /* Library */,
+				26B77C9B278AE55500521C15 /* AuthViewController.swift */,
+				26B77CA0278AEA9700521C15 /* WelcomeViewController.swift */,
+				26A61394278C467C00442A8F /* ProfileViewController.swift */,
+				260368B8279558AE0006A8A9 /* SettingsViewController.swift */,
+				26358562279C6EE60061EAF0 /* AlbumViewController.swift */,
+				26358564279C73C20061EAF0 /* PlaylistViewController.swift */,
+				26E0FAEF279EC22F0025436A /* SearchResultsViewController.swift */,
+				26D13E9E27A6CE930009DDE8 /* CategoryViewController.swift */,
+				260FD8F727E5CEF800B3F3D8 /* PlayerViewController.swift */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
+		26B77C98278ACAF300521C15 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				26B77C99278ACB0800521C15 /* AuthManager.swift */,
+				26A61390278C1E4800442A8F /* APICaller.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		26B77C9D278AE95900521C15 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				26B77C9E278AE96800521C15 /* Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		26B77CA2278B4C3300521C15 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				26B77CA3278B4C4100521C15 /* AuthResponse.swift */,
+				26A61392278C1EB600442A8F /* UserProfile.swift */,
+				260368BA27955E270006A8A9 /* SettingsModel.swift */,
+				260368BC2796D3370006A8A9 /* APIImage.swift */,
+				260368BE2796D4590006A8A9 /* NewReleasesResponse.swift */,
+				260368C02796D6F60006A8A9 /* Artist.swift */,
+				260368C22796E3590006A8A9 /* FeaturedPlaylistResponse.swift */,
+				260368C42796F3980006A8A9 /* RecommendedGenresResponse.swift */,
+				260368C627972D190006A8A9 /* RecommendationsResponse.swift */,
+				260368C827972FE40006A8A9 /* AudioTrack.swift */,
+				260368CA279730070006A8A9 /* Playlist.swift */,
+				26358566279C827E0061EAF0 /* AlbumDetailsResponse.swift */,
+				26358568279C8B600061EAF0 /* PlaylistDetailsResponse.swift */,
+				26D13E9A27A5BDD60009DDE8 /* AllCategoriesResponse.swift */,
+				260C55A527B950960050608D /* SearchResultResponse.swift */,
+				260C55A727B9562F0050608D /* SearchResult.swift */,
+				264F6CEB27EF3D1B00938180 /* LibraryPlaylistResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		26E2417E27A2CBCD007F3364 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				26358555279A80960061EAF0 /* NewReleasesCollectionViewCell.swift */,
+				26358557279A80E10061EAF0 /* FeaturedPlaylistCollectionViewCell.swift */,
+				26358559279A81240061EAF0 /* RecommendedCollectionViewCell.swift */,
+				26358571279D6CEB0061EAF0 /* AlbumTrackCollectionViewCell.swift */,
+				26E2417F27A2CBED007F3364 /* GenreCollectionViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		40BE33B01310C4677D81DF68 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C12BF0C6C0C247F57373ECF5 /* Pods-MeloManiac.debug.xcconfig */,
+				72F36C34F9A4ADA211447EB9 /* Pods-MeloManiac.release.xcconfig */,
+				882D60D7A657E629D7420BFA /* Pods-MeloManiac-MeloManiacUITests.debug.xcconfig */,
+				0D3B74107A244E901DDCB5C9 /* Pods-MeloManiac-MeloManiacUITests.release.xcconfig */,
+				10BA90E17073419897E24DFE /* Pods-MeloManiacTests.debug.xcconfig */,
+				593649D0022B734C699C7E51 /* Pods-MeloManiacTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F4C1B037350C9AC50A0D997B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8E604F64B969AA22A07CBF07 /* Pods_MeloManiac.framework */,
+				498253BCFA38768855DA7286 /* Pods_MeloManiac_MeloManiacUITests.framework */,
+				DCAF335242998E970FF2231A /* Pods_MeloManiacTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +452,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 26B77C84278AAF9900521C15 /* Build configuration list for PBXNativeTarget "MeloManiac" */;
 			buildPhases = (
+				044C446049C7B43B9A2E014A /* [CP] Check Pods Manifest.lock */,
 				26B77C56278AAF9600521C15 /* Sources */,
 				26B77C57278AAF9600521C15 /* Frameworks */,
 				26B77C58278AAF9600521C15 /* Resources */,
+				5BEBCEC063A5082F933480DA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +471,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 26B77C87278AAF9900521C15 /* Build configuration list for PBXNativeTarget "MeloManiacTests" */;
 			buildPhases = (
+				9FEAFA5D322D43F8BE5D3924 /* [CP] Check Pods Manifest.lock */,
 				26B77C6C278AAF9800521C15 /* Sources */,
 				26B77C6D278AAF9800521C15 /* Frameworks */,
 				26B77C6E278AAF9800521C15 /* Resources */,
@@ -170,9 +490,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 26B77C8A278AAF9900521C15 /* Build configuration list for PBXNativeTarget "MeloManiacUITests" */;
 			buildPhases = (
+				E18CDE9332C97A099AF44494 /* [CP] Check Pods Manifest.lock */,
 				26B77C77278AAF9900521C15 /* Sources */,
 				26B77C78278AAF9900521C15 /* Frameworks */,
 				26B77C79278AAF9900521C15 /* Resources */,
+				82E525C01C1B3F698621B515 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -233,7 +555,6 @@
 			files = (
 				26B77C6A278AAF9800521C15 /* LaunchScreen.storyboard in Resources */,
 				26B77C67278AAF9800521C15 /* Assets.xcassets in Resources */,
-				26B77C65278AAF9600521C15 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,14 +574,173 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		044C446049C7B43B9A2E014A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MeloManiac-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5BEBCEC063A5082F933480DA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MeloManiac/Pods-MeloManiac-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MeloManiac/Pods-MeloManiac-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MeloManiac/Pods-MeloManiac-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		82E525C01C1B3F698621B515 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MeloManiac-MeloManiacUITests/Pods-MeloManiac-MeloManiacUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MeloManiac-MeloManiacUITests/Pods-MeloManiac-MeloManiacUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MeloManiac-MeloManiacUITests/Pods-MeloManiac-MeloManiacUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9FEAFA5D322D43F8BE5D3924 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MeloManiacTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E18CDE9332C97A099AF44494 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MeloManiac-MeloManiacUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		26B77C56278AAF9600521C15 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				260A200627D4B5220085370A /* SearchResultSubtitleTableViewCellViewModel.swift in Sources */,
+				26B77C93278ABE5900521C15 /* SearchViewController.swift in Sources */,
+				26B77C9A278ACB0800521C15 /* AuthManager.swift in Sources */,
+				2635856C279C9E9F0061EAF0 /* PlaylistHeaderCollectionReusableView.swift in Sources */,
+				264F6CEC27EF3D1B00938180 /* LibraryPlaylistResponse.swift in Sources */,
+				264F6CEA27EF098500938180 /* LibraryToggleView.swift in Sources */,
+				260368C927972FE40006A8A9 /* AudioTrack.swift in Sources */,
+				260368C52796F3980006A8A9 /* RecommendedGenresResponse.swift in Sources */,
+				264F6CEE27EF523900938180 /* ActionLabelView.swift in Sources */,
+				26358563279C6EE60061EAF0 /* AlbumViewController.swift in Sources */,
+				2635856E279D26DE0061EAF0 /* PlaylistHeaderViewViewModel.swift in Sources */,
+				260368BD2796D3370006A8A9 /* APIImage.swift in Sources */,
+				260368BB27955E270006A8A9 /* SettingsModel.swift in Sources */,
+				26A61393278C1EB600442A8F /* UserProfile.swift in Sources */,
+				26358561279C2A7F0061EAF0 /* RecommendedTrackViewModel.swift in Sources */,
+				26A61391278C1E4800442A8F /* APICaller.swift in Sources */,
+				260C55A827B9562F0050608D /* SearchResult.swift in Sources */,
+				260A200227D3F6320085370A /* SearchResultDefaultTableViewCellViewModel.swift in Sources */,
+				26E0FAF0279EC22F0025436A /* SearchResultsViewController.swift in Sources */,
+				260A200027D3F12D0085370A /* SearchResultDefaultTableViewCell.swift in Sources */,
+				26B77CA1278AEA9700521C15 /* WelcomeViewController.swift in Sources */,
 				26B77C62278AAF9600521C15 /* ViewController.swift in Sources */,
+				26D13E9B27A5BDD60009DDE8 /* AllCategoriesResponse.swift in Sources */,
+				2635855F279C25410061EAF0 /* FeaturePlaylistCellViewModel.swift in Sources */,
 				26B77C5E278AAF9600521C15 /* AppDelegate.swift in Sources */,
+				260368B9279558AE0006A8A9 /* SettingsViewController.swift in Sources */,
+				260FD8FA27E5F35400B3F3D8 /* PlayerControlsView.swift in Sources */,
+				26358569279C8B600061EAF0 /* PlaylistDetailsResponse.swift in Sources */,
 				26B77C60278AAF9600521C15 /* SceneDelegate.swift in Sources */,
+				26B77C9F278AE96800521C15 /* Extensions.swift in Sources */,
+				26B77C95278ABE7600521C15 /* LibraryViewController.swift in Sources */,
+				264F6CE827EEF7A700938180 /* LibraryAlbumsViewController.swift in Sources */,
+				26B77C91278AB7A900521C15 /* TabBarController.swift in Sources */,
+				2635855A279A81240061EAF0 /* RecommendedCollectionViewCell.swift in Sources */,
+				26D13E9F27A6CE930009DDE8 /* CategoryViewController.swift in Sources */,
+				26B77C9C278AE55500521C15 /* AuthViewController.swift in Sources */,
+				26358556279A80960061EAF0 /* NewReleasesCollectionViewCell.swift in Sources */,
+				26358572279D6CEB0061EAF0 /* AlbumTrackCollectionViewCell.swift in Sources */,
+				26358570279D5B6F0061EAF0 /* TitleHeaderCollectionReusableView.swift in Sources */,
+				26D13E9D27A6C9E30009DDE8 /* CategoryCollectionViewCellViewModel.swift in Sources */,
+				26E2418027A2CBED007F3364 /* GenreCollectionViewCell.swift in Sources */,
+				26A61395278C467C00442A8F /* ProfileViewController.swift in Sources */,
+				260368C727972D190006A8A9 /* RecommendationsResponse.swift in Sources */,
+				26358574279D701B0061EAF0 /* AlbumCollectionViewCellViewModel.swift in Sources */,
+				2635855D279A859A0061EAF0 /* NewReleasesCellViewModel.swift in Sources */,
+				26358567279C827E0061EAF0 /* AlbumDetailsResponse.swift in Sources */,
+				260368CB279730070006A8A9 /* Playlist.swift in Sources */,
+				260368BF2796D4590006A8A9 /* NewReleasesResponse.swift in Sources */,
+				26B77CA4278B4C4100521C15 /* AuthResponse.swift in Sources */,
+				26358558279A80E10061EAF0 /* FeaturedPlaylistCollectionViewCell.swift in Sources */,
+				26358565279C73C20061EAF0 /* PlaylistViewController.swift in Sources */,
+				260368C12796D6F60006A8A9 /* Artist.swift in Sources */,
+				260A200427D4B39C0085370A /* SearchResultSubtitleTableVIewCell.swift in Sources */,
+				260C55A627B950960050608D /* SearchResultResponse.swift in Sources */,
+				264F6CE527EEF71100938180 /* LibraryPlaylistViewController.swift in Sources */,
+				260FD8F627E5C66C00B3F3D8 /* PlaybackPresenter.swift in Sources */,
+				260FD8F827E5CEF800B3F3D8 /* PlayerViewController.swift in Sources */,
+				26B77C8F278AB76200521C15 /* HomeViewController.swift in Sources */,
+				260368C32796E3590006A8A9 /* FeaturedPlaylistResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,14 +776,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		26B77C63278AAF9600521C15 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				26B77C64278AAF9600521C15 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		26B77C68278AAF9800521C15 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -433,6 +905,7 @@
 		};
 		26B77C85278AAF9900521C15 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C12BF0C6C0C247F57373ECF5 /* Pods-MeloManiac.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -451,6 +924,7 @@
 		};
 		26B77C86278AAF9900521C15 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72F36C34F9A4ADA211447EB9 /* Pods-MeloManiac.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -469,6 +943,7 @@
 		};
 		26B77C88278AAF9900521C15 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10BA90E17073419897E24DFE /* Pods-MeloManiacTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -490,6 +965,7 @@
 		};
 		26B77C89278AAF9900521C15 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 593649D0022B734C699C7E51 /* Pods-MeloManiacTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -511,6 +987,7 @@
 		};
 		26B77C8B278AAF9900521C15 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 882D60D7A657E629D7420BFA /* Pods-MeloManiac-MeloManiacUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -530,6 +1007,7 @@
 		};
 		26B77C8C278AAF9900521C15 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D3B74107A244E901DDCB5C9 /* Pods-MeloManiac-MeloManiacUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
