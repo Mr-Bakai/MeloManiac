@@ -230,7 +230,6 @@
 				2635856A279C9E740061EAF0 /* Headers */,
 				260A1FFE27D3F1010085370A /* SearchResultCells */,
 				26358554279A807B0061EAF0 /* Brows */,
-				260FD8F927E5F35400B3F3D8 /* PlayerControlsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -360,6 +359,7 @@
 			isa = PBXGroup;
 			children = (
 				264F6CE627EEF75700938180 /* Library */,
+				260FD8F927E5F35400B3F3D8 /* PlayerControlsView.swift */,
 				26B77C9B278AE55500521C15 /* AuthViewController.swift */,
 				26B77CA0278AEA9700521C15 /* WelcomeViewController.swift */,
 				26A61394278C467C00442A8F /* ProfileViewController.swift */,
