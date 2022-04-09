@@ -88,7 +88,7 @@ class PlaylistViewController: UIViewController {
                         return RecommendedTrackViewModel(
                             name: $0.track.name,
                             artistName: $0.track.artists.first?.name ?? "-",
-                            artworkURL: URL(string: $0.track.album.images.first?.url ?? ""))
+                            artworkURL: URL(string: $0.track.album?.images.first?.url ?? ""))
                     })
                     self.collectionView.reloadData()
                 case .failure(let error):

@@ -73,6 +73,18 @@ class AlbumViewController: UIViewController {
         collectionView.delegate = self
         collectionView.dataSource = self
         
+        fetchData()
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action,
+                                                            target: self,
+                                                            action: #selector(didTapActions))
+    }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        collectionView.frame = view.bounds
+    }
+    
+    private func fetchData(){
         APICaller.shared.getAlbumsDetails(for: album) { [weak self] result in
             DispatchQueue.main.async {
                 switch result {
@@ -86,15 +98,35 @@ class AlbumViewController: UIViewController {
                     })
                     self?.collectionView.reloadData()
                 case .failure(let error):
+                    print("This is the error")
                     print(error.localizedDescription)
                 }
             }
         }
     }
     
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-        collectionView.frame = view.bounds
+    @objc func didTapActions(){
+        let actionSheet = UIAlertController(title: album.name,
+                                            message: "Actions",
+                                            preferredStyle: .actionSheet)
+        
+        actionSheet.addAction(UIAlertAction(title: "Cancel",
+                                            style: .cancel,
+                                            handler: nil))
+        
+        actionSheet.addAction(UIAlertAction(title: "Save Album", style: .default, handler: { [weak self] _ in
+            guard let strongSelf = self else { return }
+            
+            APICaller.shared.saveAlbum(album: strongSelf.album) { success in
+                if success {
+                    HapticManager.shared.vibrate(for: .success)
+                    NotificationCenter.default.post(name: .albumSavedNotification, object: nil)
+                } else {
+                    HapticManager.shared.vibrate(for: .error)
+                }
+            }
+     }))
+        present(actionSheet, animated: true, completion: nil)
     }
 }
 

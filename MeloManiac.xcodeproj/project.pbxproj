@@ -70,6 +70,8 @@
 		26D13E9F27A6CE930009DDE8 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26D13E9E27A6CE930009DDE8 /* CategoryViewController.swift */; };
 		26E0FAF0279EC22F0025436A /* SearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E0FAEF279EC22F0025436A /* SearchResultsViewController.swift */; };
 		26E2418027A2CBED007F3364 /* GenreCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26E2417F27A2CBED007F3364 /* GenreCollectionViewCell.swift */; };
+		26EADB9728019C4F00876FC6 /* LibraryAlbumsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EADB9628019C4F00876FC6 /* LibraryAlbumsResponse.swift */; };
+		26EADB992801FDFB00876FC6 /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26EADB982801FDFB00876FC6 /* HapticManager.swift */; };
 		28239F4E2501D1E7E26B200E /* Pods_MeloManiacTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DCAF335242998E970FF2231A /* Pods_MeloManiacTests.framework */; };
 		A72E8EAFE838330EF7CAEF10 /* Pods_MeloManiac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E604F64B969AA22A07CBF07 /* Pods_MeloManiac.framework */; };
 		E6E7274593FD130A12453FE6 /* Pods_MeloManiac_MeloManiacUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 498253BCFA38768855DA7286 /* Pods_MeloManiac_MeloManiacUITests.framework */; };
@@ -164,6 +166,8 @@
 		26D13E9E27A6CE930009DDE8 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		26E0FAEF279EC22F0025436A /* SearchResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsViewController.swift; sourceTree = "<group>"; };
 		26E2417F27A2CBED007F3364 /* GenreCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenreCollectionViewCell.swift; sourceTree = "<group>"; };
+		26EADB9628019C4F00876FC6 /* LibraryAlbumsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryAlbumsResponse.swift; sourceTree = "<group>"; };
+		26EADB982801FDFB00876FC6 /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
 		498253BCFA38768855DA7286 /* Pods_MeloManiac_MeloManiacUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MeloManiac_MeloManiacUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		593649D0022B734C699C7E51 /* Pods-MeloManiacTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeloManiacTests.release.xcconfig"; path = "Target Support Files/Pods-MeloManiacTests/Pods-MeloManiacTests.release.xcconfig"; sourceTree = "<group>"; };
 		72F36C34F9A4ADA211447EB9 /* Pods-MeloManiac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MeloManiac.release.xcconfig"; path = "Target Support Files/Pods-MeloManiac/Pods-MeloManiac.release.xcconfig"; sourceTree = "<group>"; };
@@ -374,6 +378,7 @@
 			children = (
 				26B77C99278ACB0800521C15 /* AuthManager.swift */,
 				26A61390278C1E4800442A8F /* APICaller.swift */,
+				26EADB982801FDFB00876FC6 /* HapticManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -406,6 +411,7 @@
 				260C55A527B950960050608D /* SearchResultResponse.swift */,
 				260C55A727B9562F0050608D /* SearchResult.swift */,
 				264F6CEB27EF3D1B00938180 /* LibraryPlaylistResponse.swift */,
+				26EADB9628019C4F00876FC6 /* LibraryAlbumsResponse.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -688,10 +694,12 @@
 				2635856C279C9E9F0061EAF0 /* PlaylistHeaderCollectionReusableView.swift in Sources */,
 				264F6CEC27EF3D1B00938180 /* LibraryPlaylistResponse.swift in Sources */,
 				264F6CEA27EF098500938180 /* LibraryToggleView.swift in Sources */,
+				26EADB992801FDFB00876FC6 /* HapticManager.swift in Sources */,
 				260368C927972FE40006A8A9 /* AudioTrack.swift in Sources */,
 				260368C52796F3980006A8A9 /* RecommendedGenresResponse.swift in Sources */,
 				264F6CEE27EF523900938180 /* ActionLabelView.swift in Sources */,
 				26358563279C6EE60061EAF0 /* AlbumViewController.swift in Sources */,
+				26EADB9728019C4F00876FC6 /* LibraryAlbumsResponse.swift in Sources */,
 				2635856E279D26DE0061EAF0 /* PlaylistHeaderViewViewModel.swift in Sources */,
 				260368BD2796D3370006A8A9 /* APIImage.swift in Sources */,
 				260368BB27955E270006A8A9 /* SettingsModel.swift in Sources */,

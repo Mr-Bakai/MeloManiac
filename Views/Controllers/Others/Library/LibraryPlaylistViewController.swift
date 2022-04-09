@@ -8,6 +8,7 @@ import Foundation
 import UIKit
 
 class LibraryPlaylistViewController: UIViewController {
+    
     var playlists = [Playlist]()
     private let noPlaylistView = ActionLabelView()
     
@@ -103,8 +104,10 @@ class LibraryPlaylistViewController: UIViewController {
             
             APICaller.shared.createPlaylist(with: text) { [weak self] success in
                 if success {
+                    HapticManager.shared.vibrate(for: .success)
                     self?.fetchData()
                 } else {
+                    HapticManager.shared.vibrate(for: .error)
                     print("Failed to print playlist")
                 }
             }
@@ -148,6 +151,7 @@ extension LibraryPlaylistViewController: UITableViewDelegate, UITableViewDataSou
     func tableView(_ tableView: UITableView,
                    didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        HapticManager.shared.vibrateForSelection()
         let playlist = playlists[indexPath.row]
         
         guard selectionHandler == nil else {

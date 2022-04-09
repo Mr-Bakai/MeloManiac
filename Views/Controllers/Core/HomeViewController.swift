@@ -234,7 +234,7 @@ class HomeViewController: UIViewController {
             return RecommendedTrackViewModel(
                 name: $0.name,
                 artistName: $0.artists.first?.name ?? "",
-                artworkURL: URL(string: $0.album.images.first?.url ?? ""))
+                artworkURL: URL(string: $0.album?.images.first?.url ?? ""))
         })))
         collectionView.reloadData()
     }
@@ -312,6 +312,7 @@ extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSour
     // MARK: -Clicks
     func collectionView(_ collectionView: UICollectionView,
                         didSelectItemAt indexPath: IndexPath) {
+        HapticManager.shared.vibrateForSelection()
         
         collectionView.deselectItem(at: indexPath, animated: true)
         let section = sections[indexPath.section]

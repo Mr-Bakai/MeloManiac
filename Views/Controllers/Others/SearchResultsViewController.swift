@@ -126,7 +126,7 @@ class SearchResultsViewController: UIViewController, UITableViewDataSource, UITa
         let viewModel = SearchResultSubtitleTableViewCellViewModel(
             title: track.name,
             subtitle: track.artists.first?.name ?? "-",
-            imageURL: URL(string: track.album.images.first?.url ?? ""))
+            imageURL: URL(string: track.album?.images.first?.url ?? ""))
         
         cell.configure(with: viewModel)
         return cell
@@ -148,6 +148,7 @@ class SearchResultsViewController: UIViewController, UITableViewDataSource, UITa
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
+        HapticManager.shared.vibrateForSelection()
         let result = sections[indexPath.section].results[indexPath.row]
         delegate?.didTapResult(result)
     }
